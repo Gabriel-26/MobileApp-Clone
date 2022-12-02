@@ -1,6 +1,6 @@
-# login_homepage
+# MobileApp-Clone
 
-A new Flutter project.
+MangaToon App Clone using Flutter
 
 ## Getting Started
 
