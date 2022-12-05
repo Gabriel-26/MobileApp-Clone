@@ -23,17 +23,18 @@ class _HomePageState extends State<HomePage> {
         tabs: [
           GButton(icon: Icons.home_sharp,
             text: 'Home',
-            onPressed: (){
-            Navigator.push(context,
-            MaterialPageRoute(builder: (context){
-              return const FavoritesPage();
-            })
-            );
-            },
+            onPressed: (){},
           ),
           GButton(icon: Icons.thumb_up_alt,
           text: 'Favorites',
-            onPressed: (){},
+            onPressed: (){
+
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context){
+                    return const FavoritesPage();
+                  })
+              );
+            },
           ),
           GButton(icon: Icons.timer_sharp,
           text: 'Recent',

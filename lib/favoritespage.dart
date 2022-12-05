@@ -18,7 +18,7 @@ class _FavoritesPage extends State<FavoritesPage>{
       appBar: AppBar(
         automaticallyImplyLeading: false,
         backgroundColor: Colors.amber[400],
-        title: const Text('MyApp', style: TextStyle(fontSize: 22, fontWeight:FontWeight.bold),),
+        title: const Text('Favorites', style: TextStyle(fontSize: 22, fontWeight:FontWeight.bold),),
         centerTitle: true,
         actions: <Widget>[
           IconButton(
