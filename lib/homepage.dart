@@ -58,7 +58,7 @@ class _HomePageState extends State<HomePage> {
           ),
         ],
         leading: IconButton(
-            icon: const Icon(Icons.menu_sharp),
+            icon: const Icon(Icons.arrow_back_ios),
             onPressed:(){ Navigator.pop(context,
          MaterialPageRoute(builder:(context)=> LoginPage()),
     );
