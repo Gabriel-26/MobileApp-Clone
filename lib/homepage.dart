@@ -174,6 +174,7 @@ class _HomePageState extends State<HomePage> {
         SizedBox(height:5),
 
             Container(
+              alignment: Alignment.centerLeft,
               child: Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
                 child: Text(
@@ -184,7 +185,6 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
               ),
-              alignment: Alignment.centerLeft,
             ),
 
 
@@ -271,6 +271,7 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
             Container(
+              alignment: Alignment.centerLeft,
               child: Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
                 child: Text(
@@ -281,7 +282,6 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
               ),
-              alignment: Alignment.centerLeft,
             ),
 
             SingleChildScrollView(
