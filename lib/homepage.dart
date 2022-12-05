@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
+import 'package:login_homepage/favoritespage.dart';
 import 'login_page.dart';
 
 
@@ -25,9 +26,9 @@ class _HomePageState extends State<HomePage> {
             onPressed: (){
             Navigator.push(context,
             MaterialPageRoute(builder: (context){
-              return const Favorites();
+              return const FavoritesPage();
             })
-            )
+            );
             },
           ),
           GButton(icon: Icons.thumb_up_alt,
