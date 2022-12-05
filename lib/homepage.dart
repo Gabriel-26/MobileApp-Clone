@@ -22,15 +22,19 @@ class _HomePageState extends State<HomePage> {
         tabs: [
           GButton(icon: Icons.home_sharp,
             text: 'Home',
+            onPressed: (){},
           ),
           GButton(icon: Icons.thumb_up_alt,
           text: 'Favorites',
+            onPressed: (){},
           ),
           GButton(icon: Icons.timer_sharp,
           text: 'Recent',
+            onPressed: (){},
           ),
           GButton(icon: Icons.download_rounded,
           text: 'Downloads',
+            onPressed: (){},
           ),
         ],
       ),
@@ -59,6 +63,7 @@ class _HomePageState extends State<HomePage> {
             Icon(Icons.auto_stories_sharp,
             size: 110),
             Container(
+              alignment: Alignment.centerLeft,
               child: Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
                 child: Text(
@@ -69,7 +74,6 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
               ),
-              alignment: Alignment.centerLeft,
             ),
 
               SingleChildScrollView(
