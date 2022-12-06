@@ -175,6 +175,9 @@ class _FavoritesPage extends State<FavoritesPage>{
                           ),
                         ),
                       ),
+                      SizedBox(
+                        height: 20,
+                      )
                     ],
 
                   ),
