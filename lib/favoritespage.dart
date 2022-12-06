@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:login_homepage/homepage.dart';
-import 'package:google_nav_bar/google_nav_bar.dart';
-import 'package:login_homepage/login_page.dart';
+
 
 // ignore_for_file: prefer_const_literals_to_create_immutables
 // ignore_for_file: prefer_const_constructors
@@ -109,7 +107,7 @@ class _FavoritesPage extends State<FavoritesPage>{
                           ),
                         ),
                       ),
-                      Container(
+                      SizedBox(
                         height: 140,
                         // alignment: Alignment.centerLeft,
                         child: ClipRRect(
@@ -119,14 +117,14 @@ class _FavoritesPage extends State<FavoritesPage>{
                             child: AspectRatio(
                               aspectRatio: 6/5,
                               child: Image(
-                                image: AssetImage('assets/naruto.png'),
+                                image: AssetImage('assets/bluelock.png'),
                                 fit: BoxFit.fill,
                               ),
                             ),
                           ),
                         ),
                       ),
-                      Container(
+                      SizedBox(
                         height: 140,
                         // alignment: Alignment.centerLeft,
                         child: ClipRRect(
@@ -136,14 +134,14 @@ class _FavoritesPage extends State<FavoritesPage>{
                             child: AspectRatio(
                               aspectRatio: 6/5,
                               child: Image(
-                                image: AssetImage('assets/naruto.png'),
+                                image: AssetImage('assets/kny.jpg'),
                                 fit: BoxFit.fill,
                               ),
                             ),
                           ),
                         ),
                       ),
-                      Container(
+                      SizedBox(
                         height: 140,
                         // alignment: Alignment.centerLeft,
                         child: ClipRRect(
@@ -153,14 +151,14 @@ class _FavoritesPage extends State<FavoritesPage>{
                             child: AspectRatio(
                               aspectRatio: 6/5,
                               child: Image(
-                                image: AssetImage('assets/naruto.png'),
+                                image: AssetImage('assets/aot.png'),
                                 fit: BoxFit.fill,
                               ),
                             ),
                           ),
                         ),
                       ),
-                      Container(
+                      SizedBox(
                         height: 140,
                         // alignment: Alignment.centerLeft,
                         child: ClipRRect(
@@ -170,7 +168,7 @@ class _FavoritesPage extends State<FavoritesPage>{
                             child: AspectRatio(
                               aspectRatio: 6/5,
                               child: Image(
-                                image: AssetImage('assets/naruto.png'),
+                                image: AssetImage('assets/onepiece.jpg'),
                                 fit: BoxFit.fill,
                               ),
                             ),
@@ -182,10 +180,7 @@ class _FavoritesPage extends State<FavoritesPage>{
                   ),
 
                 ),
-
-
-
-  ]
+            ]
           ),
         )
       ),
