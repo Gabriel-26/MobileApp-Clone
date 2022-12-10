@@ -19,7 +19,16 @@ class _DownloadsPageState extends State<DownloadsPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Opacity(opacity: 0.25, child: Icon(Icons.download,size: 100)),
+            Opacity(opacity: 0.25, child: Text("No Downloads Queued"))
+          ],
+         ),
+      ),
     );
       }
 }
