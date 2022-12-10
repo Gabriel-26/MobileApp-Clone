@@ -1,5 +1,8 @@
 
 import 'package:flutter/material.dart';
+import 'package:login_homepage/downloadpage.dart';
+import 'package:login_homepage/recentspage.dart';
+import 'blankpage.dart';
 import 'favoritespage.dart';
 import 'login_page.dart';
 
@@ -23,6 +26,8 @@ class _HomePageState extends State<HomePage> {
   static final List <Widget> screens =[
     HomePage(),
     FavoritesPage(),
+    RecentsPage(),
+    DownloadsPage(),
   ];
 
   void _navigateBottomBar(int index){

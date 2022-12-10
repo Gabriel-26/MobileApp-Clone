@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
+import 'package:login_homepage/downloadpage.dart';
+import 'package:login_homepage/recentspage.dart';
 import 'favoritespage.dart';
 import 'login_page.dart';
 import 'homepage.dart';
@@ -23,6 +25,8 @@ class _BlankPageState extends State<BlankPage> {
   static final List <Widget> screens = [
     HomePage(),
     FavoritesPage(),
+    RecentsPage(),
+    DownloadsPage(),
   ];
 
   void _navigateBottomBar(int index) {
