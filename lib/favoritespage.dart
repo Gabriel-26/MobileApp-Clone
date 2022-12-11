@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:login_homepage/homepage.dart';
-import 'package:google_nav_bar/google_nav_bar.dart';
-import 'package:login_homepage/login_page.dart';
+
 
 // ignore_for_file: prefer_const_literals_to_create_immutables
 // ignore_for_file: prefer_const_constructors
@@ -14,54 +12,180 @@ class FavoritesPage extends StatefulWidget {
 }
 
 class _FavoritesPage extends State<FavoritesPage>{
+  int currentIndex = 1;
+
   @override
   Widget build(BuildContext context){
     return Scaffold(
-      bottomNavigationBar: GNav(
-        backgroundColor: Colors.amber.shade500,
-        tabs: [
-          GButton(icon: Icons.home_sharp,
-            text: 'Home',
-            onPressed: (){
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context){
-                    return const HomePage();
-                  })
-              );
-            },
+      body: Center(
+        child: SingleChildScrollView(
+          scrollDirection: Axis.vertical,
+          child: Column(
+            children: [
+              // screens.elementAt(currentIndex),
+
+              SizedBox(
+                height: 35,
+              ),
+
+
+                 Container(
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+                  ),
+                  child: Wrap(
+                    spacing: 12,
+                    runSpacing: 14,
+                    // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      SizedBox(
+                        height: 140,
+                        // alignment: Alignment.centerLeft,
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(0),
+                          child: Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 10),
+                            child: AspectRatio(
+                              aspectRatio: 6/5,
+                              child: Image(
+                                image: AssetImage('assets/naruto.png'),
+                                fit: BoxFit.fill,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                      SizedBox(
+                        height: 140,
+                        // alignment: Alignment.centerLeft,
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(0),
+                          child: Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 10),
+                            child: AspectRatio(
+                              aspectRatio:6/5,
+                              child: Image(
+                                image: AssetImage('assets/pokemon.png'),
+                                fit: BoxFit.fill,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                      SizedBox(
+                        height: 140,
+                        // alignment: Alignment.centerLeft,
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(0),
+                          child: Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 10),
+                            child: AspectRatio(
+                              aspectRatio: 6/5,
+                              child: Image(
+                                image: AssetImage('assets/hxh.png'),
+                                fit: BoxFit.fill,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                      SizedBox(
+                        height: 140,
+                        // alignment: Alignment.centerLeft,
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(0),
+                          child: Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 10),
+                            child: AspectRatio(
+                              aspectRatio: 6/5,
+                              child: Image(
+                                image: AssetImage('assets/db.png'),
+                                fit: BoxFit.fill,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                      SizedBox(
+                        height: 140,
+                        // alignment: Alignment.centerLeft,
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(0),
+                          child: Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 10),
+                            child: AspectRatio(
+                              aspectRatio: 6/5,
+                              child: Image(
+                                image: AssetImage('assets/bluelock.png'),
+                                fit: BoxFit.fill,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                      SizedBox(
+                        height: 140,
+                        // alignment: Alignment.centerLeft,
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(0),
+                          child: Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 10),
+                            child: AspectRatio(
+                              aspectRatio: 6/5,
+                              child: Image(
+                                image: AssetImage('assets/kny.jpg'),
+                                fit: BoxFit.fill,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                      SizedBox(
+                        height: 140,
+                        // alignment: Alignment.centerLeft,
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(0),
+                          child: Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 10),
+                            child: AspectRatio(
+                              aspectRatio: 6/5,
+                              child: Image(
+                                image: AssetImage('assets/aot.png'),
+                                fit: BoxFit.fill,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                      SizedBox(
+                        height: 140,
+                        // alignment: Alignment.centerLeft,
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(0),
+                          child: Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 10),
+                            child: AspectRatio(
+                              aspectRatio: 6/5,
+                              child: Image(
+                                image: AssetImage('assets/onepiece.jpg'),
+                                fit: BoxFit.fill,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                      SizedBox(
+                        height: 20,
+                      )
+                    ],
+
+                  ),
+
+                ),
+            ]
           ),
-          GButton(icon: Icons.thumb_up_alt,
-            text: 'Favorites',
-            onPressed: (){}
-          ),
-          GButton(icon: Icons.timer_sharp,
-            text: 'Recent',
-            onPressed: (){},
-          ),
-          GButton(icon: Icons.download_rounded,
-            text: 'Downloads',
-            onPressed: (){},
-          ),
-        ],
-      ),
-      appBar: AppBar(
-        automaticallyImplyLeading: false,
-        backgroundColor: Colors.amber[400],
-        title: const Text('Favorites', style: TextStyle(fontSize: 22, fontWeight:FontWeight.bold),),
-        centerTitle: true,
-        actions: <Widget>[
-          IconButton(
-              icon: const Icon(Icons.search_outlined),
-              onPressed: (){}
-          ),
-        ],
-        leading: IconButton(
-            icon: const Icon(Icons.menu_sharp),
-            onPressed:(){ Navigator.pop(context,
-              MaterialPageRoute(builder:(context)=> LoginPage()),
-            );
-            }
-        ),
+        )
       ),
     );
   }

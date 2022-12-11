@@ -1,6 +1,6 @@
 
 import 'package:flutter/material.dart';
-import 'homepage.dart';
+import 'blankpage.dart';
 // ignore_for_file: prefer_const_literals_to_create_immutables
 // ignore_for_file: prefer_const_constructors
 
@@ -15,13 +15,13 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.amber[200],
+      backgroundColor: Colors.blue[800],
       appBar: AppBar(
-        backgroundColor: Colors.amber[300],
+        backgroundColor: Colors.black12,
         title: Center(
           child: Text(
-            'MyApp',
-            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30),
+            'Tachiyomi',
+            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30, fontFamily: 'Times New Roman'),
           ),
         ),
       ),
@@ -107,12 +107,12 @@ class _LoginPageState extends State<LoginPage> {
                 padding: const EdgeInsets.symmetric(horizontal: 25.0),
                 child: InkWell(
                   onTap: () {
-                    Navigator.of(context).push(MaterialPageRoute(builder: (context)=>HomePage()));
+                    Navigator.of(context).push(MaterialPageRoute(builder: (context)=>BlankPage()));
                   },
                   child:Ink(
                   padding: const EdgeInsets.all(15),
                   decoration: BoxDecoration(
-                    color: Colors.orangeAccent,
+                    color: Colors.black87,
                     borderRadius: BorderRadius.circular(20),
                   ),
                   child: Center(
@@ -134,7 +134,7 @@ class _LoginPageState extends State<LoginPage> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text('New to MyApp?',
+                  Text('New to Tachiyomi?',
                       style: TextStyle(
                         color: Colors.black,
                         fontWeight: FontWeight.bold,
@@ -149,10 +149,11 @@ class _LoginPageState extends State<LoginPage> {
                 ],
               ),
               SizedBox(height: 10),
-              Icon(
-                Icons.phone_android_sharp,
-                size: 100,
-              )
+              Image(
+                image: AssetImage('assets/tachi.png'),
+                height: 110,
+                width: 110,
+              ),
             ],
           ),
         ),
