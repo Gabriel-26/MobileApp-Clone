@@ -1,6 +1,6 @@
 # MobileApp-Clone
 
-MangaToon App Clone using Flutter
+Tachiyomi (somewhat) App Clone using Flutter
 
 ## Getting Started
 
