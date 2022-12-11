@@ -23,6 +23,13 @@ class _FavoritesPage extends State<FavoritesPage>{
           child: Column(
             children: [
               // screens.elementAt(currentIndex),
+              SizedBox(
+                height: 20,
+              ),
+              Text(
+                'Favorites',
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25,)
+              ),
 
               SizedBox(
                 height: 35,
