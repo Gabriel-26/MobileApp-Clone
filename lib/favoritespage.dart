@@ -40,136 +40,184 @@ class _FavoritesPage extends State<FavoritesPage>{
                     // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       SizedBox(
-                        height: 140,
-                        // alignment: Alignment.centerLeft,
-                        child: ClipRRect(
-                          borderRadius: BorderRadius.circular(0),
-                          child: Padding(
-                            padding: const EdgeInsets.symmetric(horizontal: 10),
-                            child: AspectRatio(
-                              aspectRatio: 6/5,
-                              child: Image(
-                                image: AssetImage('assets/naruto.png'),
-                                fit: BoxFit.fill,
+                        width: 160.0,
+                        height: 160.0,
+                        child: Card(
+                          child: Center(
+                            child: Padding(
+                              padding: EdgeInsets.all(8.0),
+                              child: Column(
+                                children: [
+                                  Image.asset(
+                                    "assets/naruto.png",
+                                    height: 95.0,
+                                  ),
+                                  SizedBox(height: 20.0),
+                                  Text("Naruto",
+                                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+                                  ),
+                                ],
                               ),
                             ),
                           ),
                         ),
                       ),
                       SizedBox(
-                        height: 140,
-                        // alignment: Alignment.centerLeft,
-                        child: ClipRRect(
-                          borderRadius: BorderRadius.circular(0),
-                          child: Padding(
-                            padding: const EdgeInsets.symmetric(horizontal: 10),
-                            child: AspectRatio(
-                              aspectRatio:6/5,
-                              child: Image(
-                                image: AssetImage('assets/pokemon.png'),
-                                fit: BoxFit.fill,
+                        width: 160.0,
+                        height: 160.0,
+                        child: Card(
+                          child: Center(
+                            child: Padding(
+                              padding: EdgeInsets.all(8.0),
+                              child: Column(
+                                children: [
+                                  Image.asset(
+                                    "assets/aot.png",
+                                    height: 95.0,
+                                  ),
+                                  SizedBox(height: 20.0),
+                                  Text("Attack on Titan",
+                                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+                                  ),
+                                ],
                               ),
                             ),
                           ),
                         ),
                       ),
                       SizedBox(
-                        height: 140,
-                        // alignment: Alignment.centerLeft,
-                        child: ClipRRect(
-                          borderRadius: BorderRadius.circular(0),
-                          child: Padding(
-                            padding: const EdgeInsets.symmetric(horizontal: 10),
-                            child: AspectRatio(
-                              aspectRatio: 6/5,
-                              child: Image(
-                                image: AssetImage('assets/hxh.png'),
-                                fit: BoxFit.fill,
+                        width: 160.0,
+                        height: 160.0,
+                        child: Card(
+                          child: Center(
+                            child: Padding(
+                              padding: EdgeInsets.all(8.0),
+                              child: Column(
+                                children: [
+                                  Image.asset(
+                                    "assets/bluelock.png",
+                                    height: 95.0,
+                                  ),
+                                  SizedBox(height: 20.0),
+                                  Text("Blue Lock",
+                                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+                                  ),
+                                ],
                               ),
                             ),
                           ),
                         ),
                       ),
                       SizedBox(
-                        height: 140,
-                        // alignment: Alignment.centerLeft,
-                        child: ClipRRect(
-                          borderRadius: BorderRadius.circular(0),
-                          child: Padding(
-                            padding: const EdgeInsets.symmetric(horizontal: 10),
-                            child: AspectRatio(
-                              aspectRatio: 6/5,
-                              child: Image(
-                                image: AssetImage('assets/db.png'),
-                                fit: BoxFit.fill,
+                        width: 160.0,
+                        height: 160.0,
+                        child: Card(
+                          child: Center(
+                            child: Padding(
+                              padding: EdgeInsets.all(8.0),
+                              child: Column(
+                                children: [
+                                  Image.asset(
+                                    "assets/db.png",
+                                    height: 95.0,
+                                  ),
+                                  SizedBox(height: 20.0),
+                                  Text("Dragon Ball Z",
+                                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+                                  ),
+                                ],
                               ),
                             ),
                           ),
                         ),
                       ),
                       SizedBox(
-                        height: 140,
-                        // alignment: Alignment.centerLeft,
-                        child: ClipRRect(
-                          borderRadius: BorderRadius.circular(0),
-                          child: Padding(
-                            padding: const EdgeInsets.symmetric(horizontal: 10),
-                            child: AspectRatio(
-                              aspectRatio: 6/5,
-                              child: Image(
-                                image: AssetImage('assets/bluelock.png'),
-                                fit: BoxFit.fill,
+                        width: 160.0,
+                        height: 160.0,
+                        child: Card(
+                          child: Center(
+                            child: Padding(
+                              padding: EdgeInsets.all(8.0),
+                              child: Column(
+                                children: [
+                                  Image.asset(
+                                    "assets/hxh.png",
+                                    height: 95.0,
+                                  ),
+                                  SizedBox(height: 20.0),
+                                  Text("Hunter X Hunter",
+                                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+                                  ),
+                                ],
                               ),
                             ),
                           ),
                         ),
                       ),
                       SizedBox(
-                        height: 140,
-                        // alignment: Alignment.centerLeft,
-                        child: ClipRRect(
-                          borderRadius: BorderRadius.circular(0),
-                          child: Padding(
-                            padding: const EdgeInsets.symmetric(horizontal: 10),
-                            child: AspectRatio(
-                              aspectRatio: 6/5,
-                              child: Image(
-                                image: AssetImage('assets/kny.jpg'),
-                                fit: BoxFit.fill,
+                        width: 160.0,
+                        height: 160.0,
+                        child: Card(
+                          child: Center(
+                            child: Padding(
+                              padding: EdgeInsets.all(8.0),
+                              child: Column(
+                                children: [
+                                  Image.asset(
+                                    "assets/pokemon.png",
+                                    height: 95.0,
+                                  ),
+                                  SizedBox(height: 20.0),
+                                  Text("Pokemon",
+                                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+                                  ),
+                                ],
                               ),
                             ),
                           ),
                         ),
                       ),
                       SizedBox(
-                        height: 140,
-                        // alignment: Alignment.centerLeft,
-                        child: ClipRRect(
-                          borderRadius: BorderRadius.circular(0),
-                          child: Padding(
-                            padding: const EdgeInsets.symmetric(horizontal: 10),
-                            child: AspectRatio(
-                              aspectRatio: 6/5,
-                              child: Image(
-                                image: AssetImage('assets/aot.png'),
-                                fit: BoxFit.fill,
+                        width: 160.0,
+                        height: 160.0,
+                        child: Card(
+                          child: Center(
+                            child: Padding(
+                              padding: EdgeInsets.all(8.0),
+                              child: Column(
+                                children: [
+                                  Image.asset(
+                                    "assets/op.png",
+                                    height: 95.0,
+                                  ),
+                                  SizedBox(height: 20.0),
+                                  Text("One Piece",
+                                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+                                  ),
+                                ],
                               ),
                             ),
                           ),
                         ),
                       ),
                       SizedBox(
-                        height: 140,
-                        // alignment: Alignment.centerLeft,
-                        child: ClipRRect(
-                          borderRadius: BorderRadius.circular(0),
-                          child: Padding(
-                            padding: const EdgeInsets.symmetric(horizontal: 10),
-                            child: AspectRatio(
-                              aspectRatio: 6/5,
-                              child: Image(
-                                image: AssetImage('assets/onepiece.jpg'),
-                                fit: BoxFit.fill,
+                        width: 160.0,
+                        height: 160.0,
+                        child: Card(
+                          child: Center(
+                            child: Padding(
+                              padding: EdgeInsets.all(8.0),
+                              child: Column(
+                                children: [
+                                  Image.asset(
+                                    "assets/kny.jpg",
+                                    height: 95.0,
+                                  ),
+                                  SizedBox(height: 20.0),
+                                  Text("Kimetsu No Yaiba",
+                                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+                                  ),
+                                ],
                               ),
                             ),
                           ),
