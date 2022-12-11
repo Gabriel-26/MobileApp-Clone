@@ -90,7 +90,9 @@ class _BlankPageState extends State<BlankPage> {
         actions: <Widget>[
           IconButton(
               icon: const Icon(Icons.search_outlined),
-              onPressed: () {}
+              onPressed: () {
+                showSearch(context: context, delegate: SearchBehavior());
+              }
           ),
         ],
         leading: IconButton(
@@ -103,5 +105,72 @@ class _BlankPageState extends State<BlankPage> {
         ),
       ),
     );
+  }
+}
+
+class SearchBehavior extends SearchDelegate{
+  List<String> searchResults = [
+    'Kimetsu no Yaiba',
+    'Attack on Titan',
+    'Blue Lock',
+    'Naruto',
+    'Bleach',
+  ];
+
+  @override
+  Widget? buildLeading(BuildContext context) => IconButton(onPressed: () => close(context,null),
+      icon: const Icon(Icons.arrow_back_ios)
+  );
+
+
+  @override
+  List<Widget>? buildActions(BuildContext context) =>[
+    IconButton(
+      icon: Icon(Icons.clear),
+      onPressed: (){
+        if(query.isEmpty){
+          close(context,null);
+        } else {
+          query='';
+        }
+      },
+    )
+  ];
+
+  @override
+  Widget buildResults(BuildContext context) => Center(
+    child: Text(
+      query,
+      style: TextStyle(
+          fontWeight: FontWeight.bold,
+          fontSize: 15,
+      ),
+    ),
+  );
+
+  @override
+  Widget buildSuggestions(BuildContext context) {
+  List<String> suggestions = searchResults.where((searchResults){
+    final result = searchResults.toLowerCase();
+    final input = query.toLowerCase();
+
+    return result.contains(input);
+  }).toList();
+
+  return ListView.builder(
+    itemCount: suggestions.length,
+    itemBuilder: (context,index){
+      final suggestion = suggestions[index];
+
+      return ListTile(
+        title: Text(suggestion),
+        onTap: (){
+          query = suggestion;
+
+          showResults(context);
+        },
+      );
+    }
+  );
   }
 }
